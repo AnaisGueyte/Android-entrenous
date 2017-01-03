@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.google.playservices.placecomplete"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+
+    <TextView
+        android:text="Première adresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/account"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp"
+        android:id="@+id/labelAddress1"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelAddress1"
+        android:layout_alignParentStart="true"
+        android:id="@+id/autocomplete1"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/account"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/txt_attributions"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:text="Deuxième adresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autocomplete1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/labelAddress2"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelAddress2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/autocomplete2"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/account"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="26dp"
+        android:id="@+id/txt_attributions2"
+        android:layout_alignParentEnd="true" />
+
+
+    <CheckBox
+        android:text="Café"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addFriends"
+        android:layout_alignStart="@+id/addFriends"
+        android:layout_marginTop="27dp"
+        android:id="@+id/boxCoffee" />
+
+    <CheckBox
+        android:text="Bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/boxBar"
+        android:layout_alignStart="@+id/boxCoffee"
+        android:layout_alignEnd="@+id/boxCoffee"
+        android:layout_below="@+id/boxCoffee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/erreurbox" />
+
+
+    <fragment
+        android:id="@+id/place_fragment"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/txt_attributions"
+        android:layout_alignParentStart="true" />
+
+    <fragment
+        android:id="@+id/place_fragment2"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/autocomplete2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Salut Anaïs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/account"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:text="Ajoutez des amis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/addFriends"
+        android:layout_below="@+id/place_fragment2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Sauvegardez cette recherche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/boxBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:text="Lancez la recherche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/launchSearch"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+
+
+</RelativeLayout>
