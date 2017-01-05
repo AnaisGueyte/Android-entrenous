@@ -87,9 +87,12 @@
         android:layout_below="@+id/boxCoffee" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:text=""
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:id="@+id/erreurbox" />
+        android:id="@+id/erreurbox"
+        android:layout_below="@+id/boxBar"
+        android:layout_alignParentStart="true" />
 
 
     <fragment
